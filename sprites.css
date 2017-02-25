@@ -1,0 +1,69 @@
+.icon-advantages2, .icon-advantages3, .icon-advantages4, .icon-advantages5, .icon-advantages6, .icon-contacts, .icon-advantages1{
+	background: url(sprites.png) no-repeat;
+}
+
+.icon-advantages2{
+	background-position: 0 -95px ;
+	width: 26px;
+	height: 39px;
+}
+
+.icon-advantages3{
+	background-position: 0 -148px ;
+	width: 58px;
+	height: 40px;
+}
+
+.icon-advantages4{
+	background-position: 0 -202px ;
+	width: 50px;
+	height: 27px;
+}
+
+.icon-advantages5{
+	background-position: 0 -241px ;
+	width: 50px;
+	height: 38px;
+}
+
+.icon-advantages6{
+	background-position: 0 -291px ;
+	width: 50px;
+	height: 61px;
+}
+
+.icon-contacts{
+	background-position: 0 0;
+	width: 46px;
+	height: 32px;
+}
+
+.icon-advantages1{
+	background-position: 0 -42px ;
+	width: 50px;
+	height: 42px;
+}
+
+.icon-social-fb{
+	background-position: 0 -363px ;
+	width: 34px;
+	height: 34px;
+}
+
+.icon-social-g{
+	background-position: 0 -407px ;
+	width: 34px;
+	height: 34px;
+}
+
+.icon-social-mail{
+	background-position: 0 -496px ;
+	width: 34px;
+	height: 34px;
+}
+
+.icon-social-tw{
+	background-position: 0 -451px ;
+	width: 34px;
+	height: 34px;
+}

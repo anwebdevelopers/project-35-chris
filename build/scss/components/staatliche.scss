@@ -1,0 +1,86 @@
+.title-section_staatliche {
+    min-height: 705px;
+    background-image: url(../img/bg-header-staatliche.jpg);
+    &:before {
+        background-image: url(../img/bg-header-staatliche.jpg);
+    }
+}
+
+.staatliche-page__title {
+    margin: rem(140px) 0 0 0;
+    text-align: center;
+    color: #fff;
+    h1 {
+        margin: 0;
+        font-size: rem(38px);
+        font-weight: 500;
+        line-height: 1.4;
+    }
+}
+.staatliche-page__text {
+    margin: rem(50px) 0 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: rem(20px);
+    line-height: 1.6;
+    p {
+        margin: 0;
+    }
+}
+.staatliche__img {
+    margin: rem(50px) 0 0 0;
+    text-align: center;
+    img {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        margin: 0 rem(10px) rem(20px) rem(10px);
+    }
+}
+.staatliche {
+    padding: rem(85px) 0 rem(100px) 0;
+}
+.staatliche__box {
+    position: relative;
+    padding: rem(25px) 4% rem(40px) 4%;
+    background-color: #f9f9f9;
+    border: 1px solid #dadada;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        display: block;
+        height: 10px;
+        background-color: $main-color;
+        background-image: linear-gradient(to right, #47c7ca, #a1d21c);
+    }
+}
+.staatliche__title {
+    margin: rem(50px) 0 rem(30px) 0;
+    text-align: center;
+    h3 {
+        margin: 0;
+        font-size: rem(22px);
+        font-weight: 600;
+    }
+}
+.staatliche__text {
+    margin: rem(30px) 0;
+    text-align: center;
+    font-size: rem(16px);
+    line-height: 2;
+    p {
+        margin: rem(20px) 0;
+    }
+    strong {
+        display: block;
+        margin: rem(70px) 0 0 0;
+        font-size: rem(18px);
+        font-weight: 600;
+    }
+}

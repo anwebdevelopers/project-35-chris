@@ -1,0 +1,170 @@
+.title-section_einsatzgebiete {
+    background-image: url(../img/bg-header-einsatzgebiete.jpg);
+    &:before {
+        background-image: url(../img/bg-header-einsatzgebiete.jpg);
+    }
+}
+.einsatzgebiete-page__img {
+    margin: rem(40px) 0 0 0;
+    text-align: center;
+    img {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+.einsatzgebiete-page__title {
+    margin: rem(30px) 0 0 0;
+    text-align: center;
+    color: #fff;
+    h1 {
+        margin: 0;
+        font-size: rem(38px);
+        font-weight: 500;
+        line-height: 1.2;
+    }
+}
+.einsatzgebiete-page__text {
+    margin: rem(30px) 0 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: rem(20px);
+    line-height: 1.6;
+    p {
+        margin: 0;
+    }
+    span {
+        color: $main-color;
+    }
+}
+.einsatzgebiete {
+    position: relative;
+    padding: rem(60px) 0 rem(30px) 0;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 50%;
+        top: 0;
+        bottom: 0;
+        margin-right: 205px;
+        background-color: #f9f9f9;
+        border-right: 1px solid #ececec;
+    }
+}
+.einsatzgebiete__box {
+    @extend .clearfix;
+}
+.einsatzgebiete__list {
+    float: left;
+    width: 33.3%;
+    padding: 0 15px;
+    font-size: rem(16px);
+    font-weight: 500;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            a {
+                display: block;
+                text-decoration: none;
+                color: #000;
+                padding: rem(8px) rem(15px);
+                transition: all .5s ease;
+                &:hover, &:active, &:focus {
+                    color: #fff;
+                    background-color: $main-color;
+                }
+            }
+            .active {
+                color: #fff;
+                background-color: $main-color;
+            }
+        }
+    }
+}
+.einsatzgebiete__content {
+    margin: 0 0 0 42%;
+    padding: 0 15px;
+}
+.einsatzgebiete__content-title {
+    margin: 0 0 rem(40px) 0;
+    color: $main-color;
+    h2 {
+        margin: 0;
+        font-size: rem(28px);
+        font-weight: 500;
+    }
+}
+.einsatzgebiete__content-text {
+    margin: rem(30px) 0 rem(50px);
+    font-size: rem(14px);
+    line-height: 2;
+    font-weight: 500;
+    p {
+        margin: rem(30px) 0;
+    }
+    cite {
+        font-size: rem(18px);
+        display: block;
+        padding: rem(25px);
+        border: 1px solid $main-color;
+        font-style: italic;
+    }
+}
+
+@media only screen and (max-width : 1199px) {
+    .einsatzgebiete__list {
+        width: 37%;
+    }
+    .einsatzgebiete__content {
+        margin: 0 0 0 40%;
+    }
+    .einsatzgebiete {
+        &:before {
+            margin-right: 137px;
+        }
+    }
+}
+
+@media only screen and (max-width : 991px) {
+    .einsatzgebiete {
+        &:before {
+            margin-right: 108px;
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .einsatzgebiete {
+        &:before {
+            margin-right: 0;
+            right: auto;
+            width: 37.5%;
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .einsatzgebiete__list {
+        float: none;
+        width: auto;
+    }
+    .einsatzgebiete__content {
+        margin: rem(40px) 0 0 0;
+    }
+    .einsatzgebiete {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+}

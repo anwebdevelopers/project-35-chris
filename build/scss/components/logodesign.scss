@@ -1,0 +1,115 @@
+.title-section_logodesign {
+    background-image: url(../img/bg-header-logodesign.jpg);
+    &:before {
+        background-image: url(../img/bg-header-logodesign.jpg);
+    }
+}
+
+.logodesign-page__title {
+    margin: rem(140px) 0 0 0;
+    text-align: center;
+    color: #fff;
+    h1 {
+        margin: 0;
+        font-size: rem(38px);
+        font-weight: 500;
+        line-height: 1.4;
+    }
+}
+.logodesign-page__text {
+    margin: rem(25px) 0 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: rem(20px);
+    line-height: 1.6;
+    p {
+        margin: 0;
+    }
+    span {
+        color: $main-color;
+    }
+}
+.logodesign {
+    padding: rem(60px) 0 rem(50px) 0;
+}
+.logodesign__box {
+    margin: 0 0 rem(60px) 0;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ccc;
+}
+.logodesign__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    &:hover, &:active {
+        .logodesign__item-inner {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.logodesign__item-inner {
+    position: relative;
+    height: 0;
+    padding: 0 0 100% 0;
+    overflow: hidden;
+    img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        transition: all .8s ease;
+        min-height: 100%;
+        min-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+.logodesign__title {
+    margin: rem(40px) 0 rem(30px) 0;
+    text-align: center;
+    h3 {
+        margin: 0;
+        font-size: rem(28px);
+        font-weight: 500;
+    }
+}
+.logodesign__text {
+    margin: rem(30px) 0;
+    text-align: center;
+    font-size: rem(14px);
+    line-height: 2;
+    p {
+        margin: rem(20px) 0;
+    }
+}
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+    .logodesign__item {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .logodesign__box  {
+        display: block;
+    }
+    .logodesign__item {
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,108 @@
+@import "bourbon";
+@import "components/vars.scss";
+//@import "components/normalize.scss";
+//@import "components/fonts.scss";
+
+*::-webkit-input-placeholder {
+	color: #000;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #000;
+	opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #000;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: #000;
+}
+input:focus::-webkit-input-placeholder {color: transparent}
+input:focus::-moz-placeholder          {color: transparent}
+input:focus:-moz-placeholder           {color: transparent}
+input:focus:-ms-input-placeholder      {color: transparent}
+textarea:focus::-webkit-input-placeholder {color: transparent}
+textarea:focus::-moz-placeholder          {color: transparent}
+textarea:focus:-moz-placeholder           {color: transparent}
+textarea:focus:-ms-input-placeholder      {color: transparent}
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.5;
+	font-family: 'Ubuntu', sans-serif;
+	color: #000;
+	background-color: #fff;
+	overflow-x: hidden;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+a {
+	outline: none !important;
+}
+
+
+//Custom Styles Here
+@import "components/header.scss";
+@import "components/advantages.scss";
+@import "components/video.scss";
+@import "components/reviews.scss";
+@import "components/clients.scss";
+@import "components/calculation.scss";
+@import "components/footer.scss";
+//page leistungen
+@import "components/leistungen.scss";
+//page referenzen
+@import "components/referenzen.scss";
+//page staatliche
+@import "components/staatliche.scss";
+//page logodesign
+@import "components/logodesign.scss";
+//page einsatzgebiete
+@import "components/einsatzgebiete.scss";
+//page blog
+@import "components/blog.scss";
+
+
+
+//@import "build/scss/components/magnific-popup.scss";
+
+//ALWAYS END
+@import "components/media.scss";
+
+//Load Libs SASS
+//@import "html/libs/animate/animate.sass";
+@import "html/libs/owl.carousel/dist/assets/owl.carousel.min";
+@import "html/libs/jquery-ui-1.12.1.custom/jquery-ui.min";
+//@import "html/libs/superfish/dist/css/superfish";
+//@import "html/libs/font-awesome/scss/font-awesome.scss";
+//@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
+@import "html/libs/magnific-popup/dist/magnific-popup";

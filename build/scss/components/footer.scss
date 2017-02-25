@@ -1,0 +1,155 @@
+.footer__top-line {
+    #ProvenExpert_widgetbar_container {
+        >div {
+            position: relative !important;
+            z-index: 0  !important;
+            >div:nth-child(2) {
+                width:1140px !important;
+            }
+            .provenExpertWidgetContent {
+                >img {
+                    margin:8px 0 0 0 !important;
+                }
+            }
+        }
+    }
+}
+.footer__box {
+    position: relative;
+    padding: 0 rem(80px) 0 0;
+}
+.footer__bottom-line {
+    padding: rem(50px) 0 rem(30px) 0;
+}
+.footer__nav {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 rem(70px) 0 0;
+}
+.footer__nav-title {
+    font-size: rem(20px);
+}
+.footer__nav-list {
+    margin: 15px 0 0 0;
+    font-size: rem(14px);
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin: 0 0 8px 0;
+            a {
+                text-decoration: none;
+                color: #000;
+                transition: all .5s ease;
+                &:hover, &:active, &:focus {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+.footer__contacts {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer__contacts-title {
+    font-size: rem(20px);
+}
+.footer__contacts-list {
+    margin: 15px 0 0 0;
+    font-size: rem(14px);
+    ul {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 rem(40px) 0 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin:  0 0 8px 0;
+            a {
+                text-decoration: underline;
+                color: #000;
+                transition: all .5s ease;
+                &:hover, &:active, &:focus {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+.footer__impressum {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: rem(14px);
+    button {
+        @include btn;
+        transition: all .5s ease;
+        &:hover, &:active, &:focus {
+            color: $main-color;
+        }
+    }
+}
+.footer__impressum-container {
+    font-size: rem(14px);
+    color: #727272;
+}
+@media only screen and (max-width : 1199px) {
+    .footer__top-line {
+        #ProvenExpert_widgetbar_container {
+            >div {
+                >div:nth-child(2) {
+                    width:940px !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 991px) {
+    .footer__top-line {
+        #ProvenExpert_widgetbar_container {
+            >div {
+                >div:nth-child(2) {
+                    width:720px !important;
+                }
+            }
+        }
+    }
+    .footer__box {
+        padding: 0;
+    }
+    .footer__impressum {
+        margin: rem(20px) 0 0 0;
+        position: static;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .footer__top-line {
+        display: none;
+    }
+    .footer__box {
+        text-align: center;
+    }
+
+    .footer__nav {
+        display: block;
+        margin: 0;
+    }
+    .footer__contacts {
+        margin: rem(20px) 0 0 0;
+    }
+    .footer__nav-list,
+    .footer__contacts-list {
+        ul {
+            display: block;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}

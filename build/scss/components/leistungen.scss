@@ -1,0 +1,125 @@
+.title-section_leistungen {
+    background-image: url(../img/bg-header-leistungen.jpg);
+    &:before {
+        background-image: url(../img/bg-header-leistungen.jpg);
+    }
+}
+.leistungen-page__img {
+    margin: rem(40px) 0 0 0;
+    text-align: center;
+    img {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+.leistungen-page__title {
+    margin: rem(30px) 0 0 0;
+    text-align: center;
+    color: #fff;
+    h1 {
+        margin: 0;
+        font-size: rem(38px);
+        font-weight: 500;
+        line-height: 1.2;
+    }
+}
+.leistungen-page__text {
+    margin: rem(30px) 0 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: rem(20px);
+    line-height: 1.6;
+    p {
+        margin: 0;
+    }
+}
+
+.techniques {
+    padding: rem(60px) 0 rem(50px) 0;
+    background-color: #f9f9f9;
+}
+.techniques__title {
+    text-align: center;
+    h2 {
+        margin: 0;
+        font-size: rem(28px);
+        font-weight: 500;
+        line-height: 1.2;
+    }
+}
+.techniques__text {
+    margin: rem(30px) 0 0 0;
+    text-align: center;
+    font-size: rem(16px);
+    line-height: 2;
+    p {
+        margin: 0;
+    }
+}
+.techniques__box {
+    margin: rem(70px) 0 0 0;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.techniques__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 16.66%;
+    padding: 0 15px;
+    margin: 0 0 30px 0;
+}
+.techniques__item-inner {
+    position: relative;
+    height: 0;
+    padding: 0 0 100% 0;
+    background-color: #ececec;
+    transition: all .5s ease;
+    filter: grayscale(1);
+    border: 1px solid #dddddd;
+    &:hover, &:active {
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+        max-height: 90%;
+        width: auto;
+        height: auto;
+    }
+}
+@media only screen and (max-width : 1199px) {
+    .techniques__item {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width : 991px) {
+    .techniques__item {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+@media only screen and (max-width : 640px) {
+    .techniques__item {
+        width: 33.3%;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .techniques__item {
+        width: 50%;
+    }
+}

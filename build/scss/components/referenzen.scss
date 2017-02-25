@@ -1,0 +1,194 @@
+.referenzen {
+    padding: rem(100px) 0 rem(40px) 0;
+    background-color: $main-color;
+    background-image: linear-gradient(to right, #47c7ca, #a1d21c);
+}
+.referenzen__title {
+    text-align: center;
+    color: #fff;
+    h2 {
+        margin: 0;
+        font-size: rem(38px);
+        font-weight: 500;
+        line-height: 1.2;
+    }
+}
+.referenzen__text {
+    margin: rem(30px) 0 0 0;
+    text-align: center;
+    font-size: rem(20px);
+    line-height: 2;
+    color: #fff;
+    p {
+        margin: 0;
+    }
+}
+.referenzen__box {
+    margin: rem(80px) 0 0 0;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.referenzen__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    text-decoration: none;
+    color: #fff;
+    &:hover, &:active, &:focus {
+        color: #fff;
+        .referenzen__item-img {
+            transform: scale(1.1);
+            &:after {
+                opacity: 0;
+            }
+        }
+    }
+}
+.referenzen__item-inner {
+    position: relative;
+    height: 0;
+    padding: 0 0 100% 0;
+    overflow: hidden;
+
+}
+.referenzen__item-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    transition: all .8s ease;
+    img {
+        min-height: 100%;
+        min-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: transparentize(#000, .5);
+        transition: all .8s ease;
+    }
+}
+.referenzen__item-box {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    top: auto;
+}
+.referenzen__item-title {
+    font-size: rem(24px);
+}
+.referenzen__item-text {
+    font-size: rem(18px);
+}
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+.mfp-arrow {
+    position: fixed !important;
+    top: 50% !important;
+    transform: translateY(0) !important;
+}
+
+.about {
+    padding: rem(160px) 0 rem(100px) 0;
+    background-color: #555;
+    background-image: url(../img/bg-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+}
+.about__box {
+    transform: translateY(30px);
+    transition: all 1.6s ease;
+    opacity: 0;
+}
+
+.about__img {
+    text-align: center;
+    img {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+.about__title {
+    margin: rem(30px) 0 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: rem(38px);
+    font-weight: 500;
+    line-height: 1.2;
+}
+.about__text {
+    margin: rem(30px) 0 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: rem(20px);
+    line-height: 1.6;
+    p {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+    .referenzen__item {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .referenzen__box  {
+        display: block;
+    }
+    .referenzen__item {
+        display: block;
+        width: 100%;
+    }
+}
